@@ -1,0 +1,21 @@
+.parent {
+  display: flex; /* Usa Flexbox para alinear horizontalmente */
+  gap: 16px; /* Espaciado entre los divs */
+  height: 100vh; /* Opcional: para que ocupen toda la altura de la pantalla */
+}
+
+.div1,
+.div2 {
+  flex: 1; /* Hace que ambos divs ocupen el mismo espacio */
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del div */
+  align-items: center; /* Centra el contenido verticalmente */
+  background-color: #e0e0e0; /* Fondo gris claro */
+  border: 1px solid #ccc; /* Borde opcional para visualización */
+  font-size: 1.5rem; /* Tamaño del texto */
+
+
+}
+.newConfig{
+  width: 50%;
+}
