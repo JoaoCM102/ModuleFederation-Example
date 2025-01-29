@@ -1,0 +1,23 @@
+version: '3.8'
+ 
+services:
+  app1:
+    build:
+      context: ./app1
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+ 
+  app2:
+    build:
+      context: ./app2
+      dockerfile: Dockerfile
+    ports:
+      - "8082:80"
+ 
+  shell:
+    build:
+      context: ./shell
+      dockerfile: Dockerfile
+    ports:
+      - "8083:80"

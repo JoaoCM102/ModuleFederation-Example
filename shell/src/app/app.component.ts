@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
-import { initFlowbite } from 'flowbite';
+import express from 'express';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NavbarComponent],
@@ -9,7 +9,10 @@ import { initFlowbite } from 'flowbite';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit{
-  ngOnInit(): void {
-    initFlowbite();
-  }
+   ngOnInit(): void {
+    const currentPort = window.location.port;
+    console.log(currentPort);
+
+   }
 }
+
