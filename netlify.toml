@@ -1,0 +1,17 @@
+# Configuración para la App 1
+[build]
+  base = "app1"
+  command = "npm run build"
+  publish = "app1/dist/app1"
+
+# Configuración para la App 2
+[[redirects]]
+  from = "/app2/*"
+  to = "/app2/dist/app2/:splat"
+  status = 200
+
+# Configuración para el Shell
+[[redirects]]
+  from = "/shell/*"
+  to = "/shell/dist/shell/:splat"
+  status = 200

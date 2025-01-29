@@ -9,23 +9,23 @@ import { MenubarModule } from 'primeng/menubar';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  items: MenuItem[] = []; // Inicializa el arreglo como un array vacío
+  items: MenuItem[] = [];
 
   constructor(private router: Router) {
     this.items = [
       {
         label: 'Inicio',
         icon: 'pi pi-home',
-        routerLink: ['/home'], // Navega a la ruta /home
+        routerLink: ['/home'],
       },
       {
         label: 'App1',
         icon: 'pi pi-home',
-        routerLink: ['/app1'], // Navega a la ruta /home
+        routerLink: ['/app1'],
       },{
         label: 'App2',
         icon: 'pi pi-home',
-        routerLink: ['/app2'], // Navega a la ruta /home
+        routerLink: ['/app2'], 
       },]
 }
 }
